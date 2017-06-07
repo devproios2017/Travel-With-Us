@@ -13,6 +13,20 @@
 		3D74807F1EE80489003313EB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D74807E1EE80489003313EB /* Assets.xcassets */; };
 		3D7480821EE80489003313EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D7480801EE80489003313EB /* LaunchScreen.storyboard */; };
 		3D74808A1EE80637003313EB /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D7480891EE80637003313EB /* GoogleService-Info.plist */; };
+		3D74808C1EE80B11003313EB /* storyboard_atran.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D74808B1EE80B11003313EB /* storyboard_atran.storyboard */; };
+		3D74808E1EE80B20003313EB /* storyboard_loc.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D74808D1EE80B20003313EB /* storyboard_loc.storyboard */; };
+		3D7480901EE80B2A003313EB /* storyboard_dat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D74808F1EE80B2A003313EB /* storyboard_dat.storyboard */; };
+		3D7480A01EE80C47003313EB /* IntroduceProfileTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7480951EE80C47003313EB /* IntroduceProfileTableViewCell.swift */; };
+		3D7480A11EE80C47003313EB /* IntroduceProfileTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D7480961EE80C47003313EB /* IntroduceProfileTableViewCell.xib */; };
+		3D7480A21EE80C47003313EB /* TechnicalSkillTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7480971EE80C47003313EB /* TechnicalSkillTableViewCell.swift */; };
+		3D7480A31EE80C47003313EB /* TechnicalSkillTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D7480981EE80C47003313EB /* TechnicalSkillTableViewCell.xib */; };
+		3D7480A41EE80C47003313EB /* menuCellTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D7480991EE80C47003313EB /* menuCellTableViewCell.swift */; };
+		3D7480A51EE80C47003313EB /* menuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D74809A1EE80C47003313EB /* menuView.swift */; };
+		3D7480A61EE80C47003313EB /* UserDefaultInfor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D74809B1EE80C47003313EB /* UserDefaultInfor.swift */; };
+		3D7480A71EE80C47003313EB /* LoginRegisterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D74809C1EE80C47003313EB /* LoginRegisterTableViewCell.swift */; };
+		3D7480A81EE80C47003313EB /* LoginRegisterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D74809D1EE80C47003313EB /* LoginRegisterTableViewCell.xib */; };
+		3D7480A91EE80C47003313EB /* OptionItemMenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D74809E1EE80C47003313EB /* OptionItemMenuTableViewCell.swift */; };
+		3D7480AA1EE80C47003313EB /* OptionItemMenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3D74809F1EE80C47003313EB /* OptionItemMenuTableViewCell.xib */; };
 		E00CE657CF2249849CEBC18A /* Pods_Travel_With_Us.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A16E39278EEF4B929DE407CF /* Pods_Travel_With_Us.framework */; };
 /* End PBXBuildFile section */
 
@@ -25,6 +39,20 @@
 		3D7480811EE80489003313EB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D7480831EE80489003313EB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D7480891EE80637003313EB /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		3D74808B1EE80B11003313EB /* storyboard_atran.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = storyboard_atran.storyboard; sourceTree = "<group>"; };
+		3D74808D1EE80B20003313EB /* storyboard_loc.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = storyboard_loc.storyboard; sourceTree = "<group>"; };
+		3D74808F1EE80B2A003313EB /* storyboard_dat.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = storyboard_dat.storyboard; sourceTree = "<group>"; };
+		3D7480951EE80C47003313EB /* IntroduceProfileTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IntroduceProfileTableViewCell.swift; sourceTree = "<group>"; };
+		3D7480961EE80C47003313EB /* IntroduceProfileTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = IntroduceProfileTableViewCell.xib; sourceTree = "<group>"; };
+		3D7480971EE80C47003313EB /* TechnicalSkillTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TechnicalSkillTableViewCell.swift; sourceTree = "<group>"; };
+		3D7480981EE80C47003313EB /* TechnicalSkillTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TechnicalSkillTableViewCell.xib; sourceTree = "<group>"; };
+		3D7480991EE80C47003313EB /* menuCellTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = menuCellTableViewCell.swift; sourceTree = "<group>"; };
+		3D74809A1EE80C47003313EB /* menuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = menuView.swift; sourceTree = "<group>"; };
+		3D74809B1EE80C47003313EB /* UserDefaultInfor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultInfor.swift; sourceTree = "<group>"; };
+		3D74809C1EE80C47003313EB /* LoginRegisterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRegisterTableViewCell.swift; sourceTree = "<group>"; };
+		3D74809D1EE80C47003313EB /* LoginRegisterTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginRegisterTableViewCell.xib; sourceTree = "<group>"; };
+		3D74809E1EE80C47003313EB /* OptionItemMenuTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OptionItemMenuTableViewCell.swift; sourceTree = "<group>"; };
+		3D74809F1EE80C47003313EB /* OptionItemMenuTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OptionItemMenuTableViewCell.xib; sourceTree = "<group>"; };
 		3DD6AD672C6EB36FE5DD4894 /* Pods-Travel-With-Us.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Travel-With-Us.release.xcconfig"; path = "Pods/Target Support Files/Pods-Travel-With-Us/Pods-Travel-With-Us.release.xcconfig"; sourceTree = "<group>"; };
 		739871AACCAA42DE1287EA9D /* Pods-Travel-With-Us.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Travel-With-Us.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Travel-With-Us/Pods-Travel-With-Us.debug.xcconfig"; sourceTree = "<group>"; };
 		A16E39278EEF4B929DE407CF /* Pods_Travel_With_Us.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Travel_With_Us.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -72,15 +100,69 @@
 		3D7480761EE80489003313EB /* Travel-With-Us */ = {
 			isa = PBXGroup;
 			children = (
+				3D7480931EE80BC4003313EB /* Models */,
+				3D7480921EE80BBB003313EB /* Controllers */,
+				3D7480911EE80BB2003313EB /* Views */,
 				3D7480771EE80489003313EB /* AppDelegate.swift */,
 				3D7480791EE80489003313EB /* ViewController.swift */,
 				3D74807B1EE80489003313EB /* Main.storyboard */,
+				3D74808B1EE80B11003313EB /* storyboard_atran.storyboard */,
+				3D74808D1EE80B20003313EB /* storyboard_loc.storyboard */,
+				3D74808F1EE80B2A003313EB /* storyboard_dat.storyboard */,
 				3D74807E1EE80489003313EB /* Assets.xcassets */,
 				3D7480801EE80489003313EB /* LaunchScreen.storyboard */,
 				3D7480831EE80489003313EB /* Info.plist */,
 				3D7480891EE80637003313EB /* GoogleService-Info.plist */,
 			);
 			path = "Travel-With-Us";
+			sourceTree = "<group>";
+		};
+		3D7480911EE80BB2003313EB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3D7480941EE80BFB003313EB /* Login */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		3D7480921EE80BBB003313EB /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3D7480AB1EE80D09003313EB /* Login */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		3D7480931EE80BC4003313EB /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		3D7480941EE80BFB003313EB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3D7480951EE80C47003313EB /* IntroduceProfileTableViewCell.swift */,
+				3D7480961EE80C47003313EB /* IntroduceProfileTableViewCell.xib */,
+				3D7480971EE80C47003313EB /* TechnicalSkillTableViewCell.swift */,
+				3D7480981EE80C47003313EB /* TechnicalSkillTableViewCell.xib */,
+				3D7480991EE80C47003313EB /* menuCellTableViewCell.swift */,
+				3D74809A1EE80C47003313EB /* menuView.swift */,
+				3D74809B1EE80C47003313EB /* UserDefaultInfor.swift */,
+				3D74809C1EE80C47003313EB /* LoginRegisterTableViewCell.swift */,
+				3D74809D1EE80C47003313EB /* LoginRegisterTableViewCell.xib */,
+				3D74809E1EE80C47003313EB /* OptionItemMenuTableViewCell.swift */,
+				3D74809F1EE80C47003313EB /* OptionItemMenuTableViewCell.xib */,
+			);
+			name = Login;
+			sourceTree = "<group>";
+		};
+		3D7480AB1EE80D09003313EB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Login;
 			sourceTree = "<group>";
 		};
 		43DBE7981F06503639A90924 /* Frameworks */ = {
@@ -153,10 +235,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D74808E1EE80B20003313EB /* storyboard_loc.storyboard in Resources */,
+				3D7480A11EE80C47003313EB /* IntroduceProfileTableViewCell.xib in Resources */,
+				3D7480A81EE80C47003313EB /* LoginRegisterTableViewCell.xib in Resources */,
 				3D7480821EE80489003313EB /* LaunchScreen.storyboard in Resources */,
 				3D74808A1EE80637003313EB /* GoogleService-Info.plist in Resources */,
+				3D74808C1EE80B11003313EB /* storyboard_atran.storyboard in Resources */,
 				3D74807F1EE80489003313EB /* Assets.xcassets in Resources */,
+				3D7480A31EE80C47003313EB /* TechnicalSkillTableViewCell.xib in Resources */,
+				3D7480901EE80B2A003313EB /* storyboard_dat.storyboard in Resources */,
 				3D74807D1EE80489003313EB /* Main.storyboard in Resources */,
+				3D7480AA1EE80C47003313EB /* OptionItemMenuTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -215,8 +304,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3D7480A71EE80C47003313EB /* LoginRegisterTableViewCell.swift in Sources */,
+				3D7480A01EE80C47003313EB /* IntroduceProfileTableViewCell.swift in Sources */,
 				3D74807A1EE80489003313EB /* ViewController.swift in Sources */,
 				3D7480781EE80489003313EB /* AppDelegate.swift in Sources */,
+				3D7480A51EE80C47003313EB /* menuView.swift in Sources */,
+				3D7480A91EE80C47003313EB /* OptionItemMenuTableViewCell.swift in Sources */,
+				3D7480A41EE80C47003313EB /* menuCellTableViewCell.swift in Sources */,
+				3D7480A61EE80C47003313EB /* UserDefaultInfor.swift in Sources */,
+				3D7480A21EE80C47003313EB /* TechnicalSkillTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -382,6 +478,7 @@
 				3D7480881EE80489003313EB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
