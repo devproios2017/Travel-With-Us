@@ -12,6 +12,9 @@
 		3D2766471EFACF9B0050FACF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D2766461EFACF9B0050FACF /* Assets.xcassets */; };
 		3D27664A1EFACF9B0050FACF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D2766481EFACF9B0050FACF /* LaunchScreen.storyboard */; };
 		3D2766521EFACFF10050FACF /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 3D2766511EFACFF10050FACF /* GoogleService-Info.plist */; };
+		3D96556A1EFADF840017FF87 /* Ai.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D9655691EFADF840017FF87 /* Ai.storyboard */; };
+		3D96556C1EFADF8C0017FF87 /* Dat.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D96556B1EFADF8C0017FF87 /* Dat.storyboard */; };
+		3D96556E1EFADF930017FF87 /* Loc.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D96556D1EFADF930017FF87 /* Loc.storyboard */; };
 		E3AF13E95E4A521E135BF60B /* Pods_TWU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 607B7A563DB7CB40F9789218 /* Pods_TWU.framework */; };
 /* End PBXBuildFile section */
 
@@ -24,6 +27,9 @@
 		3D27664B1EFACF9B0050FACF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D2766511EFACFF10050FACF /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		3D2766531EFAD09D0050FACF /* TWU.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TWU.entitlements; sourceTree = "<group>"; };
+		3D9655691EFADF840017FF87 /* Ai.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Ai.storyboard; sourceTree = "<group>"; };
+		3D96556B1EFADF8C0017FF87 /* Dat.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Dat.storyboard; sourceTree = "<group>"; };
+		3D96556D1EFADF930017FF87 /* Loc.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Loc.storyboard; sourceTree = "<group>"; };
 		607B7A563DB7CB40F9789218 /* Pods_TWU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TWU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2C6364E47A291FB17F5B4F8 /* Pods-TWU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TWU.release.xcconfig"; path = "Pods/Target Support Files/Pods-TWU/Pods-TWU.release.xcconfig"; sourceTree = "<group>"; };
 		F3697D038B18391A55D73998 /* Pods-TWU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TWU.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TWU/Pods-TWU.debug.xcconfig"; sourceTree = "<group>"; };
@@ -79,6 +85,9 @@
 			isa = PBXGroup;
 			children = (
 				3D2766431EFACF9B0050FACF /* Main.storyboard */,
+				3D9655691EFADF840017FF87 /* Ai.storyboard */,
+				3D96556B1EFADF8C0017FF87 /* Dat.storyboard */,
+				3D96556D1EFADF930017FF87 /* Loc.storyboard */,
 				3D2766481EFACF9B0050FACF /* LaunchScreen.storyboard */,
 			);
 			name = storyboards;
@@ -218,8 +227,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				3D27664A1EFACF9B0050FACF /* LaunchScreen.storyboard in Resources */,
+				3D96556E1EFADF930017FF87 /* Loc.storyboard in Resources */,
+				3D96556A1EFADF840017FF87 /* Ai.storyboard in Resources */,
 				3D2766521EFACFF10050FACF /* GoogleService-Info.plist in Resources */,
 				3D2766471EFACF9B0050FACF /* Assets.xcassets in Resources */,
+				3D96556C1EFADF8C0017FF87 /* Dat.storyboard in Resources */,
 				3D2766451EFACF9B0050FACF /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
