@@ -103,6 +103,7 @@
 		3D2766561EFAD2C30050FACF /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				3D27665A1EFAD2E40050FACF /* main */,
 				3D2766591EFAD2DE0050FACF /* logins */,
 			);
 			name = controllers;
@@ -125,7 +126,6 @@
 		3D2766591EFAD2DE0050FACF /* logins */ = {
 			isa = PBXGroup;
 			children = (
-				3D27665A1EFAD2E40050FACF /* main */,
 			);
 			name = logins;
 			sourceTree = "<group>";
