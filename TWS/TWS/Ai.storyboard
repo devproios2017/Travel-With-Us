@@ -1,7 +1,93 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
-    <scenes/>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="NvK-pG-8fr">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="1tD-fb-t68" customClass="LoginViewController" customModule="TWS" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ynR-fe-Isd"/>
+                        <viewControllerLayoutGuide type="bottom" id="VdN-QH-tad"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="HdQ-oE-RAu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="HAg-iX-NsQ">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seagull" translatesAutoresizingMaskIntoConstraints="NO" id="rv3-hY-ruT">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                    </imageView>
+                                    <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wCV-hv-FQU">
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="L69-Yg-Ctu">
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                                <subviews>
+                                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icon" translatesAutoresizingMaskIntoConstraints="NO" id="hwW-jW-R6z">
+                                                        <rect key="frame" x="67" y="50" width="240" height="192"/>
+                                                        <constraints>
+                                                            <constraint firstAttribute="width" constant="240" id="DsT-da-vmy"/>
+                                                            <constraint firstAttribute="width" secondItem="hwW-jW-R6z" secondAttribute="height" multiplier="1.25" id="NzB-po-A9T"/>
+                                                        </constraints>
+                                                    </imageView>
+                                                </subviews>
+                                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                                <constraints>
+                                                    <constraint firstItem="hwW-jW-R6z" firstAttribute="centerX" secondItem="L69-Yg-Ctu" secondAttribute="centerX" id="Q6T-rB-wrr"/>
+                                                    <constraint firstItem="hwW-jW-R6z" firstAttribute="top" secondItem="L69-Yg-Ctu" secondAttribute="top" constant="50" id="Sku-2F-0Jp"/>
+                                                </constraints>
+                                            </view>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstItem="L69-Yg-Ctu" firstAttribute="height" secondItem="wCV-hv-FQU" secondAttribute="height" id="0zw-VA-rwh"/>
+                                            <constraint firstAttribute="trailing" secondItem="L69-Yg-Ctu" secondAttribute="trailing" id="FbK-S1-yIw"/>
+                                            <constraint firstItem="L69-Yg-Ctu" firstAttribute="leading" secondItem="wCV-hv-FQU" secondAttribute="leading" id="SKw-J8-oP6"/>
+                                            <constraint firstItem="L69-Yg-Ctu" firstAttribute="top" secondItem="wCV-hv-FQU" secondAttribute="top" id="WYO-yS-AZa"/>
+                                            <constraint firstItem="L69-Yg-Ctu" firstAttribute="width" secondItem="wCV-hv-FQU" secondAttribute="width" id="bw9-QG-hw6"/>
+                                            <constraint firstAttribute="bottom" secondItem="L69-Yg-Ctu" secondAttribute="bottom" id="dlh-UJ-mOo"/>
+                                        </constraints>
+                                    </scrollView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="rv3-hY-ruT" firstAttribute="top" secondItem="HAg-iX-NsQ" secondAttribute="top" id="3Xi-1N-T9f"/>
+                                    <constraint firstAttribute="trailing" secondItem="wCV-hv-FQU" secondAttribute="trailing" id="HOq-L7-x1S"/>
+                                    <constraint firstItem="wCV-hv-FQU" firstAttribute="top" secondItem="HAg-iX-NsQ" secondAttribute="top" id="Ics-90-C2a"/>
+                                    <constraint firstItem="wCV-hv-FQU" firstAttribute="leading" secondItem="HAg-iX-NsQ" secondAttribute="leading" id="Kv3-by-PDC"/>
+                                    <constraint firstAttribute="trailing" secondItem="rv3-hY-ruT" secondAttribute="trailing" id="XdC-a6-WZE"/>
+                                    <constraint firstAttribute="bottom" secondItem="rv3-hY-ruT" secondAttribute="bottom" id="akb-PV-9aO"/>
+                                    <constraint firstItem="rv3-hY-ruT" firstAttribute="leading" secondItem="HAg-iX-NsQ" secondAttribute="leading" id="k0a-gV-Pr2"/>
+                                    <constraint firstAttribute="bottom" secondItem="wCV-hv-FQU" secondAttribute="bottom" id="xIx-n3-eLP"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="VdN-QH-tad" firstAttribute="top" secondItem="HAg-iX-NsQ" secondAttribute="bottom" id="6i7-Cr-rtw"/>
+                            <constraint firstItem="HAg-iX-NsQ" firstAttribute="leading" secondItem="HdQ-oE-RAu" secondAttribute="leading" id="csy-Ry-Cj4"/>
+                            <constraint firstAttribute="trailing" secondItem="HAg-iX-NsQ" secondAttribute="trailing" id="peh-il-idg"/>
+                            <constraint firstItem="HAg-iX-NsQ" firstAttribute="top" secondItem="HdQ-oE-RAu" secondAttribute="top" id="sA6-Ld-92Q"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="B7y-6X-7Qd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-242.40000000000001" y="-244.22788605697153"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="icon" width="436" height="362"/>
+        <image name="seagull" width="3433" height="4807"/>
+    </resources>
 </document>

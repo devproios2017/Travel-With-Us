@@ -24,11 +24,15 @@ PODS:
     - GoogleToolboxForMac/Defines (= 2.1.1)
   - GoogleToolboxForMac/NSData+zlib (2.1.1):
     - GoogleToolboxForMac/Defines (= 2.1.1)
+  - Material (2.6.3):
+    - Material/Core (= 2.6.3)
+  - Material/Core (2.6.3)
   - Protobuf (3.3.0)
 
 DEPENDENCIES:
   - Firebase/Core
   - Firebase/Messaging
+  - Material (~> 2.0)
 
 SPEC CHECKSUMS:
   Firebase: 284eea779b73fdff309791817da7c68bff8dd572
@@ -37,8 +41,9 @@ SPEC CHECKSUMS:
   FirebaseInstanceID: 9fbf536668f4d3f0880e7438456dabd1376e294b
   FirebaseMessaging: 227406c05b0dc9290702d2e9f18ab5528f0c2cf2
   GoogleToolboxForMac: 8e329f1b599f2512c6b10676d45736bcc2cbbeb0
+  Material: af607a7ec0e9978ef85cf189a3d8ceeeb650400f
   Protobuf: d582fecf68201eac3d79ed61369ef45734394b9c
 
-PODFILE CHECKSUM: 93a0891921ffb497f61a5410cd19814988d8bba6
+PODFILE CHECKSUM: 36ce421b637228a92f979e821bc207f96a2103ee
 
 COCOAPODS: 1.2.1
