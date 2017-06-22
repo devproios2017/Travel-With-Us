@@ -8,11 +8,11 @@ pod 'Firebase/Core'
   pod 'Firebase/Messaging'
   # Pods for TWS
   
-  source 'https://github.com/CocoaPods/Specs.git'
-  platform :ios, '8.0'
-  use_frameworks!
-  
-  pod 'Material', '~> 2.0'
+#  source 'https://github.com/CocoaPods/Specs.git'
+#  platform :ios, '8.0'
+#  use_frameworks!
+#  
+#  pod 'Material', '~> 2.0'
   # Pods for TWU
 
 end
