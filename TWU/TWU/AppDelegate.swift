@@ -4,7 +4,6 @@ import UserNotifications
 import Firebase
 import FirebaseInstanceID
 import FirebaseMessaging
-
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate ,UNUserNotificationCenterDelegate{
     
@@ -15,6 +14,17 @@ class AppDelegate: UIResponder, UIApplicationDelegate ,UNUserNotificationCenterD
     //        print(" remote Message \(remoteMessage.appData)")
     //    }
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
+        
+        //Run ViewController from your storyboard
+            self.window = UIWindow(frame: UIScreen.main.bounds)
+        
+            let storyboard = UIStoryboard(name: "Ai", bundle: nil)
+        
+            let initialViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
+        
+            self.window?.rootViewController = initialViewController
+            self.window?.makeKeyAndVisible()
+        
         // Override point for customization after application launch.
         
         if #available(iOS 10.0, *) {
@@ -40,6 +50,13 @@ class AppDelegate: UIResponder, UIApplicationDelegate ,UNUserNotificationCenterD
         FirebaseApp.configure()
         return true
     }
+    
+    func applicationDidFinishLaunching(_ application: UIApplication) {
+        window = UIWindow(frame: Screen.bounds)
+        window!.rootViewController = LoginViewController()
+        window!.makeKeyAndVisible()
+    }
+    
     
     func applicationWillResignActive(_ application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
