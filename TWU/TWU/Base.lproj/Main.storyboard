@@ -550,6 +550,9 @@
                                                             <constraint firstAttribute="height" constant="25" id="cNZ-2U-c7V"/>
                                                         </constraints>
                                                         <state key="normal" backgroundImage="arrowLeft"/>
+                                                        <connections>
+                                                            <action selector="backButton:" destination="oao-hE-rec" eventType="touchUpInside" id="Zf9-re-pOZ"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Forgot your password?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cYN-zx-YQ6">
                                                         <rect key="frame" x="56" y="90" width="264.5" height="48"/>
@@ -880,6 +883,9 @@
                                                             <constraint firstAttribute="height" constant="25" id="wgn-9Y-CPX"/>
                                                         </constraints>
                                                         <state key="normal" backgroundImage="arrowLeft"/>
+                                                        <connections>
+                                                            <action selector="backButton:" destination="FzO-IR-XMf" eventType="touchUpInside" id="wC6-ts-Rog"/>
+                                                        </connections>
                                                     </button>
                                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oNW-pp-LPl">
                                                         <rect key="frame" x="20" y="420" width="337.5" height="50"/>

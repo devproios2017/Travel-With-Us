@@ -9,7 +9,7 @@
 import UIKit
 
 class SignUpViewController: UIViewController {
-
+    
     @IBOutlet weak var showHideOld: UIButton!
     @IBOutlet weak var showHideNew: UIButton!
     @IBOutlet weak var showHideReNew: UIButton!
@@ -19,6 +19,9 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var newPassword: UITextField!
     
     @IBOutlet weak var reNewPassword: UITextField!
+    @IBAction func backButton(_ sender: Any) {
+        self.navigationController?.popViewController(animated: true)
+    }
     
     
     //    @IBAction func showHideOldTouchUpInside(_ sender: Any) {

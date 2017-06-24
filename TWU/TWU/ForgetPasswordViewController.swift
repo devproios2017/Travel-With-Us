@@ -12,6 +12,10 @@ class ForgetPasswordViewController: UIViewController {
     
     @IBOutlet weak var usernameTextField: UITextField!
     @IBOutlet weak var deleteUsername: UIButton!
+
+    @IBAction func backButton(_ sender: Any) {
+    self.navigationController?.popViewController(animated: true)
+    }
     
     
     @IBAction func usernameEdittingChanged(_ sender: Any) {
