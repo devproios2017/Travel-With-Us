@@ -16,14 +16,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate ,UNUserNotificationCenterD
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         //Run ViewController from your storyboard
-            self.window = UIWindow(frame: UIScreen.main.bounds)
-        
-            let storyboard = UIStoryboard(name: "Ai", bundle: nil)
-        
-            let initialViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
-        
-            self.window?.rootViewController = initialViewController
-            self.window?.makeKeyAndVisible()
+//            self.window = UIWindow(frame: UIScreen.main.bounds)
+//        
+//            let storyboard = UIStoryboard(name: "Ai", bundle: nil)
+//        
+//            let initialViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
+//        
+//            self.window?.rootViewController = initialViewController
+//            self.window?.makeKeyAndVisible()
         
         // Override point for customization after application launch.
         
@@ -49,12 +49,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate ,UNUserNotificationCenterD
         
         FirebaseApp.configure()
         return true
-    }
-    
-    func applicationDidFinishLaunching(_ application: UIApplication) {
-        window = UIWindow(frame: Screen.bounds)
-        window!.rootViewController = LoginViewController()
-        window!.makeKeyAndVisible()
     }
     
     
