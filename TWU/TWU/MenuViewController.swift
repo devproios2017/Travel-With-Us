@@ -16,6 +16,8 @@ class MenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        self.revealViewController().panGestureRecognizer()
+        
         tableView.register( UINib(nibName: "LoginTableViewCell", bundle: nil), forCellReuseIdentifier: "LoginTableViewCell")
         tableView.register( UINib(nibName: "OptionLoginTableViewCell", bundle: nil), forCellReuseIdentifier: "OptionLoginTableViewCell")
         
@@ -60,14 +62,17 @@ extension MenuViewController : UITableViewDataSource,UITableViewDelegate{
         
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-//        let revealViewController : SWRevealViewController = self.revealViewController()
-//        let cell : OptionLoginTableViewCell = tableView.cellForRow(at: indexPath) as! OptionLoginTableViewCell
+        //        let revealViewController : SWRevealViewController = self.revealViewController()
+        //        let cell : OptionLoginTableViewCell = tableView.cellForRow(at: indexPath) as! OptionLoginTableViewCell
         if indexPath.row == 0{
             let vc = storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
+            
             self.revealViewController().pushFrontViewController(vc, animated: true)
+            
         }
         if indexPath.row == 1{
             let vc = storyboard?.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
+            
             self.revealViewController().pushFrontViewController(vc, animated: true)
         }
     }

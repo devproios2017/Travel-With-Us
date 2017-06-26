@@ -16,7 +16,11 @@ class MainViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
+        
         super.viewDidLoad()
+        
+        self.revealViewController().panGestureRecognizer()
+        
         menuButton.target = revealViewController()
         menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
         
