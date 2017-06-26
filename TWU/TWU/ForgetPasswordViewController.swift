@@ -21,7 +21,7 @@ class ForgetPasswordViewController: UIViewController {
     @IBAction func usernameEdittingChanged(_ sender: Any) {
         deleteUsername.isHidden = false
         if (usernameTextField.text?.isEmpty)! {
-            usernameTextField.isHidden = true
+            deleteUsername.isHidden = true
         }
         
     }
@@ -29,6 +29,7 @@ class ForgetPasswordViewController: UIViewController {
     
     @IBAction func deleteUsernameTouchUpInside(_ sender: Any) {
         usernameTextField.text = ""
+        deleteUsername.isHidden = true
     }
     
     override func viewDidLoad() {

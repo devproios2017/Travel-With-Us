@@ -22,34 +22,32 @@ class LoginViewController: UIViewController {
     }
     @IBAction func deleteUsernameTouchUpInside(_ sender: UIButton) {
         usernameTextField.text = ""
+        deleteUsername.isHidden = true
     }
     
     
     
     
-    
-    @IBAction func usernameEdittingChanged(_ sender: Any) {
-        deleteUsername.isHidden = false
-        if (usernameTextField.text?.isEmpty)! {
-            usernameTextField.isHidden = true
+    @IBAction func textFieldEdittingChanged(_ sender: Any) {
+        if usernameTextField == sender as! UITextField {
+            deleteUsername.isHidden = false
+            if (usernameTextField.text?.isEmpty)! {
+                deleteUsername.isHidden = true
+            }
+        }
+        if passwordTextField == sender as! UITextField {
+            showHidePassword.isHidden = false
+            if (passwordTextField.text?.isEmpty)! {
+                showHidePassword.isHidden = true
+            }
+            
         }
     }
-    @IBAction func passwordEdittingChanged(_ sender: Any) {
-        showHidePassword.isHidden = false
-        if (passwordTextField.text?.isEmpty)! {
-            passwordTextField.isHidden = true
-        }
-    }
-    
     
     @IBAction func loginWithSocialNetwork(_ sender: Any) {
-    }
-    
-
-    
-    @IBAction func googleTouchUpInside(_ sender: UIButton) {
         
     }
+    
     
     
     override func viewDidLoad() {

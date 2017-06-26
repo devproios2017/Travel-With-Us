@@ -32,12 +32,21 @@ class SignUpViewController: UIViewController {
     @IBAction func textChangeEdittingChanged(_ sender: Any) {
         if oldPassword == sender as! UITextField{
             showHideOld.isHidden = false
+            if oldPassword.text == ""{
+                showHideOld.isHidden = true
+            }
         }
         if newPassword == sender as! UITextField{
             showHideNew.isHidden = false
+            if newPassword.text == ""{
+             showHideNew.isHidden = true
+            }
         }
         if reNewPassword == sender as! UITextField{
             showHideReNew.isHidden = false
+            if reNewPassword.text == "" {
+                showHideReNew.isHidden = true
+            }
         }
     }
     @IBAction func showHide(_ sender: Any) {

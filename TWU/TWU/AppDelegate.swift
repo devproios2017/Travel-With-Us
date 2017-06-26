@@ -15,6 +15,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate ,UNUserNotificationCenterD
     //    }
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        //Custom navigation 
+        let navigationBarAppearace = UINavigationBar.appearance()
+        
+        navigationBarAppearace.tintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        navigationBarAppearace.barTintColor = UIColor(red:1.00, green:0.50, blue:0.00, alpha:1.0)
+
+//        tintColor :attribute change the background color of the navigation bar
+//        barTintColor: attribute affect to the color of the
+                //back indicator image
+                //button titles
+                //button images
+            navigationBarAppearace.backgroundColor = UIColor(red:1.00, green:0.50, blue:0.00, alpha:1.0)
+
+        // change navigation item title color
+        navigationBarAppearace.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white]
+        
+        
+        
         //Run ViewController from your storyboard
 //            self.window = UIWindow(frame: UIScreen.main.bounds)
 //        
