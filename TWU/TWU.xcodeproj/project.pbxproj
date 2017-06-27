@@ -31,6 +31,9 @@
 		3D957ED11EFCC72200E86B36 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D957ED01EFCC72200E86B36 /* SignUpViewController.swift */; };
 		3D9655701EFAE1FC0017FF87 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D96556F1EFAE1FC0017FF87 /* LoginViewController.swift */; };
 		3D9655721EFAE20A0017FF87 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9655711EFAE20A0017FF87 /* ForgetPasswordViewController.swift */; };
+		4FAEE5F21F02BD020035AF2A /* ContentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAEE5F11F02BD020035AF2A /* ContentsViewController.swift */; };
+		4FAEE5F41F02BE490035AF2A /* ContentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAEE5F31F02BE490035AF2A /* ContentCollectionViewCell.swift */; };
+		4FAEE5F71F02C2990035AF2A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAEE5F61F02C2990035AF2A /* DetailViewController.swift */; };
 		E3AF13E95E4A521E135BF60B /* Pods_TWU.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 607B7A563DB7CB40F9789218 /* Pods_TWU.framework */; };
 /* End PBXBuildFile section */
 
@@ -68,6 +71,9 @@
 		3D957ED01EFCC72200E86B36 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		3D96556F1EFAE1FC0017FF87 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3D9655711EFAE20A0017FF87 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
+		4FAEE5F11F02BD020035AF2A /* ContentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentsViewController.swift; sourceTree = "<group>"; };
+		4FAEE5F31F02BE490035AF2A /* ContentCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewCell.swift; sourceTree = "<group>"; };
+		4FAEE5F61F02C2990035AF2A /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		607B7A563DB7CB40F9789218 /* Pods_TWU.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TWU.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F2C6364E47A291FB17F5B4F8 /* Pods-TWU.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TWU.release.xcconfig"; path = "Pods/Target Support Files/Pods-TWU/Pods-TWU.release.xcconfig"; sourceTree = "<group>"; };
 		F3697D038B18391A55D73998 /* Pods-TWU.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TWU.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TWU/Pods-TWU.debug.xcconfig"; sourceTree = "<group>"; };
@@ -150,6 +156,8 @@
 		3D2766561EFAD2C30050FACF /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4FAEE5F51F02C2640035AF2A /* Details */,
+				4FAEE5F01F02BC9A0035AF2A /* Contents */,
 				3D27665A1EFAD2E40050FACF /* main */,
 				3D2766591EFAD2DE0050FACF /* logins */,
 			);
@@ -212,6 +220,23 @@
 				3D6E1EA91EFCB2E10063C9EE /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
 			);
 			name = tpKeyboard;
+			sourceTree = "<group>";
+		};
+		4FAEE5F01F02BC9A0035AF2A /* Contents */ = {
+			isa = PBXGroup;
+			children = (
+				4FAEE5F11F02BD020035AF2A /* ContentsViewController.swift */,
+				4FAEE5F31F02BE490035AF2A /* ContentCollectionViewCell.swift */,
+			);
+			path = Contents;
+			sourceTree = "<group>";
+		};
+		4FAEE5F51F02C2640035AF2A /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				4FAEE5F61F02C2990035AF2A /* DetailViewController.swift */,
+			);
+			path = Details;
 			sourceTree = "<group>";
 		};
 		C00C1C12B623055F72BEF2F8 /* Frameworks */ = {
@@ -375,9 +400,12 @@
 				3D6E1EAC1EFCB2E10063C9EE /* TPKeyboardAvoidingTableView.m in Sources */,
 				3D9655701EFAE1FC0017FF87 /* LoginViewController.swift in Sources */,
 				3D21F8161F00FD0300C06320 /* MainTableViewCell.swift in Sources */,
+				4FAEE5F71F02C2990035AF2A /* DetailViewController.swift in Sources */,
 				3D1B1BA81EFB783F00F5802A /* Values.swift in Sources */,
+				4FAEE5F21F02BD020035AF2A /* ContentsViewController.swift in Sources */,
 				3D21F80C1F00EF6600C06320 /* LoginTableViewCell.swift in Sources */,
 				3D21F8091F00E68800C06320 /* DemoViewController.swift in Sources */,
+				4FAEE5F41F02BE490035AF2A /* ContentCollectionViewCell.swift in Sources */,
 				3D957ED11EFCC72200E86B36 /* SignUpViewController.swift in Sources */,
 				3D6E1EAD1EFCB2E10063C9EE /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				3D1B1BA61EFB783600F5802A /* Colors.swift in Sources */,

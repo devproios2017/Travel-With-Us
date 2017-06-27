@@ -41,7 +41,7 @@ extension MainViewController : UITableViewDataSource,UITableViewDelegate{
         return 8
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 200
+        return self.view.frame.size.height*0.25
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -52,6 +52,8 @@ extension MainViewController : UITableViewDataSource,UITableViewDelegate{
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("\(continents[indexPath.row])")
+        let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ContentsViewController")
+        self.navigationController?.pushViewController(vc, animated: true)
     }
     
 }
