@@ -31,6 +31,8 @@
 		3D957ED11EFCC72200E86B36 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D957ED01EFCC72200E86B36 /* SignUpViewController.swift */; };
 		3D9655701EFAE1FC0017FF87 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D96556F1EFAE1FC0017FF87 /* LoginViewController.swift */; };
 		3D9655721EFAE20A0017FF87 /* ForgetPasswordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D9655711EFAE20A0017FF87 /* ForgetPasswordViewController.swift */; };
+		4F63A2CE1F03A2E800F49B39 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F63A2CD1F03A2E800F49B39 /* CommentViewController.swift */; };
+		4F63A2D01F03ADAC00F49B39 /* CommentTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F63A2CF1F03ADAC00F49B39 /* CommentTableViewCell.swift */; };
 		4FAEE5F21F02BD020035AF2A /* ContentsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAEE5F11F02BD020035AF2A /* ContentsViewController.swift */; };
 		4FAEE5F41F02BE490035AF2A /* ContentCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAEE5F31F02BE490035AF2A /* ContentCollectionViewCell.swift */; };
 		4FAEE5F71F02C2990035AF2A /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FAEE5F61F02C2990035AF2A /* DetailViewController.swift */; };
@@ -71,6 +73,8 @@
 		3D957ED01EFCC72200E86B36 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		3D96556F1EFAE1FC0017FF87 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		3D9655711EFAE20A0017FF87 /* ForgetPasswordViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ForgetPasswordViewController.swift; sourceTree = "<group>"; };
+		4F63A2CD1F03A2E800F49B39 /* CommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
+		4F63A2CF1F03ADAC00F49B39 /* CommentTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentTableViewCell.swift; sourceTree = "<group>"; };
 		4FAEE5F11F02BD020035AF2A /* ContentsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentsViewController.swift; sourceTree = "<group>"; };
 		4FAEE5F31F02BE490035AF2A /* ContentCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentCollectionViewCell.swift; sourceTree = "<group>"; };
 		4FAEE5F61F02C2990035AF2A /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
@@ -156,6 +160,7 @@
 		3D2766561EFAD2C30050FACF /* controllers */ = {
 			isa = PBXGroup;
 			children = (
+				4F63A2CC1F03A27800F49B39 /* Comment view */,
 				4FAEE5F51F02C2640035AF2A /* Details */,
 				4FAEE5F01F02BC9A0035AF2A /* Contents */,
 				3D27665A1EFAD2E40050FACF /* main */,
@@ -220,6 +225,15 @@
 				3D6E1EA91EFCB2E10063C9EE /* UIScrollView+TPKeyboardAvoidingAdditions.m */,
 			);
 			name = tpKeyboard;
+			sourceTree = "<group>";
+		};
+		4F63A2CC1F03A27800F49B39 /* Comment view */ = {
+			isa = PBXGroup;
+			children = (
+				4F63A2CD1F03A2E800F49B39 /* CommentViewController.swift */,
+				4F63A2CF1F03ADAC00F49B39 /* CommentTableViewCell.swift */,
+			);
+			path = "Comment view";
 			sourceTree = "<group>";
 		};
 		4FAEE5F01F02BC9A0035AF2A /* Contents */ = {
@@ -404,9 +418,11 @@
 				3D1B1BA81EFB783F00F5802A /* Values.swift in Sources */,
 				4FAEE5F21F02BD020035AF2A /* ContentsViewController.swift in Sources */,
 				3D21F80C1F00EF6600C06320 /* LoginTableViewCell.swift in Sources */,
+				4F63A2D01F03ADAC00F49B39 /* CommentTableViewCell.swift in Sources */,
 				3D21F8091F00E68800C06320 /* DemoViewController.swift in Sources */,
 				4FAEE5F41F02BE490035AF2A /* ContentCollectionViewCell.swift in Sources */,
 				3D957ED11EFCC72200E86B36 /* SignUpViewController.swift in Sources */,
+				4F63A2CE1F03A2E800F49B39 /* CommentViewController.swift in Sources */,
 				3D6E1EAD1EFCB2E10063C9EE /* UIScrollView+TPKeyboardAvoidingAdditions.m in Sources */,
 				3D1B1BA61EFB783600F5802A /* Colors.swift in Sources */,
 				3D9655721EFAE20A0017FF87 /* ForgetPasswordViewController.swift in Sources */,

@@ -28,6 +28,8 @@ class ContentsViewController: UIViewController,UICollectionViewDelegate,UICollec
     }
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         let Cell = collectionView.dequeueReusableCell(withReuseIdentifier: "ContentCollectionViewCell", for: indexPath) as! ContentCollectionViewCell
+        let dic:NSDictionary = [:]
+        Cell.configCelll(dic: dic)
         return Cell;
     }
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {

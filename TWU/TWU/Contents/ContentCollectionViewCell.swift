@@ -17,6 +17,7 @@ class ContentCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var lblNumerLike: UILabel!
     func configCelll(dic:NSDictionary){
-    
+        self.viewContent.layer.cornerRadius = self.viewContent.frame.size.height*0.01
+        viewContent.clipsToBounds = true
     }
 }

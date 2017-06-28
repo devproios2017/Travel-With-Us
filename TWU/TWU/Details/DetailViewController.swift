@@ -8,16 +8,34 @@
 
 import UIKit
 
-class DetailViewController: UIViewController {
+class DetailViewController: UIViewController, UIScrollViewDelegate {
     @IBOutlet weak var contransTop: NSLayoutConstraint!
     @IBOutlet weak var imageDown: UIImageView!
 
+    @IBOutlet weak var pageControl: UIPageControl!
+    @IBOutlet weak var scrollViewpage: UIScrollView!
+    var image : [UIImage] = [#imageLiteral(resourceName: "america"),#imageLiteral(resourceName: "north_america"),#imageLiteral(resourceName: "america"),#imageLiteral(resourceName: "north_america")]
+    var farme = CGRect(x: 0, y: 0, width: 0, height: 0)
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
+        for index in 0..<image.count{
+            farme.origin.x = scrollViewpage.frame.size.width*CGFloat(index)
+            farme.size = scrollViewpage.frame.size
+            let iamge = UIImageView(frame: farme)
+            iamge.image = image[index]
+            self.scrollViewpage.addSubview(iamge)
+        }
+        scrollViewpage.contentSize = CGSize(width:   scrollViewpage.frame.size.width*CGFloat(image.count), height: self.scrollViewpage.frame.size.height)
+        
+        
     }
-
+    func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+        let pageNumber = scrollViewpage.contentOffset.x/scrollViewpage.frame.size.width
+        pageControl.currentPage = Int(pageNumber)
+        pageControl.currentPageIndicatorTintColor = UIColor.white
+    }
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -33,6 +51,12 @@ class DetailViewController: UIViewController {
         }
     }
 
+    @IBAction func tapToComment(_ sender: UITapGestureRecognizer) {
+        let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "CommentViewController")
+        self.present(vc, animated: true) { 
+            
+        }
+    }
     /*
     // MARK: - Navigation
 

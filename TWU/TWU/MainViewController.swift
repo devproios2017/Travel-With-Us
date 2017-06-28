@@ -9,6 +9,7 @@
 import UIKit
 
 class MainViewController: UIViewController {
+    @IBOutlet weak var viewCheckin: UIView!
     let continents = ["Asia", "Europe","America","Africa","Australia","Antarctica","North America", "South America"]
     let imageContinents = [#imageLiteral(resourceName: "asia"),#imageLiteral(resourceName: "europe"),#imageLiteral(resourceName: "america"),#imageLiteral(resourceName: "africa"),#imageLiteral(resourceName: "australia"),#imageLiteral(resourceName: "antarctica"),#imageLiteral(resourceName: "north_america"),#imageLiteral(resourceName: "south_merica")]
     
@@ -24,6 +25,8 @@ class MainViewController: UIViewController {
         
         tableView.tableFooterView = UIView()
         tableView.separatorColor  = UIColor.clear
+        viewCheckin.layer.cornerRadius = viewCheckin.frame.size.height*0.5
+        viewCheckin.clipsToBounds = true
         
     }
     
@@ -32,6 +35,8 @@ class MainViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+    @IBAction func tapToCheckin(_ sender: UITapGestureRecognizer) {
+    }
 }
 extension MainViewController : UITableViewDataSource,UITableViewDelegate{
     func numberOfSections(in tableView: UITableView) -> Int {
