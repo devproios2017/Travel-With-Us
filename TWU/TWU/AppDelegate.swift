@@ -15,15 +15,33 @@ class AppDelegate: UIResponder, UIApplicationDelegate ,UNUserNotificationCenterD
     //    }
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        //Custom navigation 
+        let navigationBarAppearace = UINavigationBar.appearance()
+        
+        navigationBarAppearace.tintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+        navigationBarAppearace.barTintColor = UIColor(red:1.00, green:0.50, blue:0.00, alpha:1.0)
+
+//        tintColor :attribute change the background color of the navigation bar
+//        barTintColor: attribute affect to the color of the
+                //back indicator image
+                //button titles
+                //button images
+            navigationBarAppearace.backgroundColor = UIColor(red:1.00, green:0.50, blue:0.00, alpha:1.0)
+
+        // change navigation item title color
+        navigationBarAppearace.titleTextAttributes = [NSForegroundColorAttributeName:UIColor.white]
+        
+        
+        
         //Run ViewController from your storyboard
-            self.window = UIWindow(frame: UIScreen.main.bounds)
-        
-            let storyboard = UIStoryboard(name: "Ai", bundle: nil)
-        
-            let initialViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
-        
-            self.window?.rootViewController = initialViewController
-            self.window?.makeKeyAndVisible()
+//            self.window = UIWindow(frame: UIScreen.main.bounds)
+//        
+//            let storyboard = UIStoryboard(name: "Ai", bundle: nil)
+//        
+//            let initialViewController = storyboard.instantiateViewController(withIdentifier: "LoginViewController")
+//        
+//            self.window?.rootViewController = initialViewController
+//            self.window?.makeKeyAndVisible()
         
         // Override point for customization after application launch.
         
@@ -49,12 +67,6 @@ class AppDelegate: UIResponder, UIApplicationDelegate ,UNUserNotificationCenterD
         
         FirebaseApp.configure()
         return true
-    }
-    
-    func applicationDidFinishLaunching(_ application: UIApplication) {
-        window = UIWindow(frame: Screen.bounds)
-        window!.rootViewController = LoginViewController()
-        window!.makeKeyAndVisible()
     }
     
     

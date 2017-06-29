@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="LoginTableViewCell" rowHeight="136" id="KGk-i7-Jjw" customClass="LoginTableViewCell" customModule="TWU" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="289" height="136"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="289" height="135.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="IjL-FQ-IEa">
+                        <rect key="frame" x="0.0" y="0.0" width="289" height="135.5"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" alpha="0.59999999999999998" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mCX-gR-I0q">
+                                <rect key="frame" x="0.0" y="0.0" width="289" height="135.5"/>
+                                <color key="backgroundColor" red="1" green="0.50196081400000003" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_user" translatesAutoresizingMaskIntoConstraints="NO" id="i1w-vp-BUj">
+                                <rect key="frame" x="20" y="38" width="60" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="60" id="8Bk-AU-nnl"/>
+                                    <constraint firstAttribute="width" secondItem="i1w-vp-BUj" secondAttribute="height" id="kJk-Ty-1cT"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sign In/ Sign Up" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fFx-YO-ICL">
+                                <rect key="frame" x="90" y="56" width="152" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="mCX-gR-I0q" firstAttribute="top" secondItem="IjL-FQ-IEa" secondAttribute="top" id="AcR-aX-kIp"/>
+                            <constraint firstItem="i1w-vp-BUj" firstAttribute="leading" secondItem="IjL-FQ-IEa" secondAttribute="leading" constant="20" id="JWI-v5-IfL"/>
+                            <constraint firstItem="mCX-gR-I0q" firstAttribute="leading" secondItem="IjL-FQ-IEa" secondAttribute="leading" id="LBn-b0-50d"/>
+                            <constraint firstAttribute="bottom" secondItem="mCX-gR-I0q" secondAttribute="bottom" id="Oo1-ku-UyH"/>
+                            <constraint firstAttribute="trailing" secondItem="mCX-gR-I0q" secondAttribute="trailing" id="Qr3-mX-Gzp"/>
+                            <constraint firstItem="fFx-YO-ICL" firstAttribute="leading" secondItem="i1w-vp-BUj" secondAttribute="trailing" constant="10" id="R07-gk-bYB"/>
+                            <constraint firstItem="i1w-vp-BUj" firstAttribute="centerY" secondItem="IjL-FQ-IEa" secondAttribute="centerY" id="ShB-ap-U1r"/>
+                            <constraint firstItem="fFx-YO-ICL" firstAttribute="centerY" secondItem="i1w-vp-BUj" secondAttribute="centerY" id="rWQ-dM-ZbN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="IjL-FQ-IEa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="3qu-Lw-sVh"/>
+                    <constraint firstAttribute="trailing" secondItem="IjL-FQ-IEa" secondAttribute="trailing" id="QKQ-AP-HLw"/>
+                    <constraint firstItem="IjL-FQ-IEa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="WAK-pU-UaY"/>
+                    <constraint firstAttribute="bottom" secondItem="IjL-FQ-IEa" secondAttribute="bottom" id="iy8-gj-qRG"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="iconImage" destination="i1w-vp-BUj" id="gVA-WI-rVj"/>
+                <outlet property="titleLabel" destination="fFx-YO-ICL" id="bnr-06-ukA"/>
+            </connections>
+            <point key="canvasLocation" x="63.5" y="-21"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="ic_user" width="512" height="512"/>
+    </resources>
+</document>
