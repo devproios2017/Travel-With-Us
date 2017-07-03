@@ -14,6 +14,7 @@ class MainViewController: UIViewController {
     let imageContinents = [#imageLiteral(resourceName: "asia"),#imageLiteral(resourceName: "europe"),#imageLiteral(resourceName: "america"),#imageLiteral(resourceName: "africa"),#imageLiteral(resourceName: "australia"),#imageLiteral(resourceName: "antarctica"),#imageLiteral(resourceName: "north_america"),#imageLiteral(resourceName: "south_merica")]
     @IBOutlet weak var menuButton: UIBarButtonItem!
     @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
 
         super.viewDidLoad()
