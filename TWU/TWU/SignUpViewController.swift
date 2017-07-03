@@ -21,6 +21,10 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var reNewPassword: UITextField!
     @IBAction func backButton(_ sender: Any) {
         self.navigationController?.popViewController(animated: true)
+<<<<<<< HEAD
+=======
+//       self.revealViewController().popoverPresentationController
+>>>>>>> 6e4c3926f76658af6dba6baeef8a7beef5cdb723
     }
     
     

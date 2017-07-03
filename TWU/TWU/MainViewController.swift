@@ -12,12 +12,13 @@ class MainViewController: UIViewController {
     @IBOutlet weak var viewCheckin: UIView!
     let continents = ["Asia", "Europe","America","Africa","Australia","Antarctica","North America", "South America"]
     let imageContinents = [#imageLiteral(resourceName: "asia"),#imageLiteral(resourceName: "europe"),#imageLiteral(resourceName: "america"),#imageLiteral(resourceName: "africa"),#imageLiteral(resourceName: "australia"),#imageLiteral(resourceName: "antarctica"),#imageLiteral(resourceName: "north_america"),#imageLiteral(resourceName: "south_merica")]
-    
     @IBOutlet weak var menuButton: UIBarButtonItem!
-    
     @IBOutlet weak var tableView: UITableView!
     override func viewDidLoad() {
+
         super.viewDidLoad()
+        
+        self.revealViewController().panGestureRecognizer()
         menuButton.target = revealViewController()
         menuButton.action = #selector(SWRevealViewController.revealToggle(_:))
         
@@ -25,8 +26,9 @@ class MainViewController: UIViewController {
         
         tableView.tableFooterView = UIView()
         tableView.separatorColor  = UIColor.clear
+
         viewCheckin.layer.cornerRadius = viewCheckin.frame.size.height*0.5
-        viewCheckin.clipsToBounds = true
+        viewCheckin.clipsToBounds = trueee
         
     }
     
@@ -35,6 +37,7 @@ class MainViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
     
+
     @IBAction func tapToCheckin(_ sender: UITapGestureRecognizer) {
     }
 }
@@ -47,6 +50,7 @@ extension MainViewController : UITableViewDataSource,UITableViewDelegate{
     }
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return self.view.frame.size.height*0.25
+
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -57,8 +61,10 @@ extension MainViewController : UITableViewDataSource,UITableViewDelegate{
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("\(continents[indexPath.row])")
+
         let vc = UIStoryboard.init(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "ContentsViewController")
         self.navigationController?.pushViewController(vc, animated: true)
+
     }
     
 }
