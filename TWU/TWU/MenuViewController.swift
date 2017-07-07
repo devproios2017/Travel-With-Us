@@ -16,11 +16,6 @@ class MenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-<<<<<<< HEAD
-=======
-        self.revealViewController().panGestureRecognizer()
-        
->>>>>>> 6e4c3926f76658af6dba6baeef8a7beef5cdb723
         tableView.register( UINib(nibName: "LoginTableViewCell", bundle: nil), forCellReuseIdentifier: "LoginTableViewCell")
         tableView.register( UINib(nibName: "OptionLoginTableViewCell", bundle: nil), forCellReuseIdentifier: "OptionLoginTableViewCell")
         
@@ -65,7 +60,7 @@ extension MenuViewController : UITableViewDataSource,UITableViewDelegate{
         
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-<<<<<<< HEAD
+
 //        let revealViewController : SWRevealViewController = self.revealViewController()
 //        let cell : OptionLoginTableViewCell = tableView.cellForRow(at: indexPath) as! OptionLoginTableViewCell
         if indexPath.row == 0{
@@ -74,22 +69,9 @@ extension MenuViewController : UITableViewDataSource,UITableViewDelegate{
         }
         if indexPath.row == 1{
             let vc = storyboard?.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
-=======
-        //        let revealViewController : SWRevealViewController = self.revealViewController()
-        //        let cell : OptionLoginTableViewCell = tableView.cellForRow(at: indexPath) as! OptionLoginTableViewCell
-        if indexPath.row == 0{
-            let vc = storyboard?.instantiateViewController(withIdentifier: "LoginViewController") as! LoginViewController
-            
-            self.revealViewController().pushFrontViewController(vc, animated: true)
-            
+
+            }
         }
-        if indexPath.row == 1{
-            let vc = storyboard?.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
-            
->>>>>>> 6e4c3926f76658af6dba6baeef8a7beef5cdb723
-            self.revealViewController().pushFrontViewController(vc, animated: true)
-        }
-    }
-    
+
 }
 

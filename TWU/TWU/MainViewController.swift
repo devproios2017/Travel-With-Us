@@ -29,7 +29,7 @@ class MainViewController: UIViewController {
         tableView.separatorColor  = UIColor.clear
 
         viewCheckin.layer.cornerRadius = viewCheckin.frame.size.height*0.5
-        viewCheckin.clipsToBounds = trueee
+        viewCheckin.clipsToBounds = true
         
     }
     
