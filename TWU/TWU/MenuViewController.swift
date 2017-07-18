@@ -16,7 +16,10 @@ class MenuViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+<<<<<<< HEAD
 
+=======
+>>>>>>> master
         tableView.register( UINib(nibName: "LoginTableViewCell", bundle: nil), forCellReuseIdentifier: "LoginTableViewCell")
         tableView.register( UINib(nibName: "OptionLoginTableViewCell", bundle: nil), forCellReuseIdentifier: "OptionLoginTableViewCell")
         
@@ -71,9 +74,12 @@ extension MenuViewController : UITableViewDataSource,UITableViewDelegate{
         if indexPath.row == 1{
             let vc = storyboard?.instantiateViewController(withIdentifier: "MainViewController") as! MainViewController
 
+<<<<<<< HEAD
             self.revealViewController().pushFrontViewController(vc, animated: true)
+=======
+            }
+>>>>>>> master
         }
-    }
-    
+
 }
 

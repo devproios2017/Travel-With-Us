@@ -17,6 +17,7 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var showHidePassword: UIButton!
     
 
+<<<<<<< HEAD
     @IBAction func signUpButtonTouchUpInside(_ sender: Any) {
         let vc = storyboard?.instantiateViewController(withIdentifier: "SignUpViewController") as! SignUpViewController
         self.navigationController?.pushViewController(vc, animated: true)
@@ -32,6 +33,9 @@ class LoginViewController: UIViewController {
     }
     
 
+=======
+    
+>>>>>>> master
     @IBAction func showHideButtonTouchUpInside(_ sender: UIButton) {
         passwordTextField.isSecureTextEntry = !passwordTextField.isSecureTextEntry
     }

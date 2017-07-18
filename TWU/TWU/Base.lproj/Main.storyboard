@@ -131,7 +131,6 @@
                                                                     </view>
                                                                 </subviews>
                                                                 <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="0.34999999999999998" colorSpace="calibratedRGB"/>
-
                                                                 <constraints>
                                                                     <constraint firstAttribute="trailing" secondItem="MBg-Z0-PfP" secondAttribute="trailing" constant="5" id="4hs-iC-55j"/>
                                                                     <constraint firstAttribute="bottom" secondItem="tQo-gp-M3M" secondAttribute="bottom" id="B4o-oY-ruq"/>
@@ -445,6 +444,7 @@
                                                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                                                 </state>
                                                                 <connections>
+
                                                                     <segue destination="FzO-IR-XMf" kind="show" id="Eff-LZ-BwS"/>
 
                                                                 </connections>
@@ -603,6 +603,7 @@
                                     <constraint firstItem="vAF-YE-cP7" firstAttribute="leading" secondItem="8bc-nH-40x" secondAttribute="leading" id="vf1-b1-Unf"/>
                                 </constraints>
                             </view>
+
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
@@ -1816,6 +1817,7 @@
                                                                 </constraints>
                                                             </view>
                                                         </subviews>
+
                                                         <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="0.34999999999999998" colorSpace="calibratedRGB"/>
 
                                                         <constraints>
@@ -1936,6 +1938,7 @@
                                                                 </constraints>
                                                             </view>
                                                         </subviews>
+
                                                         <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="0.34999999999999998" colorSpace="calibratedRGB"/>
 
                                                         <constraints>
@@ -2040,6 +2043,7 @@
                                                                 </constraints>
                                                             </view>
                                                         </subviews>
+
                                                         <color key="backgroundColor" red="0.098039217289999994" green="0.098039217289999994" blue="0.098039217289999994" alpha="0.34999999999999998" colorSpace="calibratedRGB"/>
 
                                                         <constraints>
@@ -2217,12 +2221,14 @@
                             <constraint firstItem="NxE-iL-1uI" firstAttribute="top" secondItem="MDt-yT-W1A" secondAttribute="top" id="zdg-sc-J9x"/>
                         </constraints>
                     </view>
+
                     <connections>
                         <outlet property="tableView" destination="Pvr-zf-qGv" id="D3R-CM-jYz"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9QP-s3-KZn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+
             <point key="canvasLocation" x="-748.125" y="704.57746478873241"/>
         </scene>
         <!--Navigation Controller-->
@@ -2244,6 +2250,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="pLV-dY-WoC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
+
             <point key="canvasLocation" x="-748" y="1418"/>
         </scene>
     </scenes>
